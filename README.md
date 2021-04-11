@@ -7,12 +7,12 @@ This project was completed as a part of a JavaScript assignment. It required the
 This project has been deployed to GitHub Pages. It can also be accessed via githib.io.
 
 * [GitHub Repository](https://github.com/j-okeefe/password-generator)
-* [Deployed GitHub IO]()
+* [Deployed GitHub IO](https://j-okeefe.github.io/password-generator/)
 
 
 ### Screenshot
 
-![](assets/images/demo.png)
+![](Assets/images/demo.png)
 
 ### This project has the following features: 
 * A generate button
