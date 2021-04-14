@@ -7,8 +7,7 @@ var confirmUpperCase = true;
 var confirmNumbers = true;
 var confirmSymbols = true;
 var passLength = 0;
-var charArray = "";
-var passGen = "";
+
 
 //Character choices
 var symbol = "!#$%&()*+-/:;<=>?@[]~_`^";
@@ -50,8 +49,9 @@ function generatePassword()  {
   };
 
   //Creates string based off of confirm selections
+  var charArray = "";
   if (confirmLowerCase) {
-    charArray = lowerCase;
+    charArray += lowerCase;
     console.log(charArray);
   }; 
 
@@ -69,16 +69,17 @@ function generatePassword()  {
     charArray += symbol;
     console.log(charArray);
   };
-
-
-  //Creates randomized selection of values chosen
+  
+  var passGen = ""
   for (var i = 0; i < passLength; i++) {
-    passGen += charArray[Math.floor(Math.random() * passLength)];
+    passGen += charArray[Math.floor(Math.random() * charArray.length)];
+    console.log(passGen);
   };
   console.log(passLength);
+  console.log(passGen);
   return passGen;
+
 };
- 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
